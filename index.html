@@ -22,13 +22,13 @@
   </header>
   <main>
     <section class="introduction">
-      <h2>Добро пожаловать в Седону</h2>
+      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
       <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
       <p>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</p>
     </section>
     <section class="reasons">
-      <h2>Причины</h2>
+      <h2 class="visually-hidden">Причины</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </sections>
       <section class="hotels">
@@ -36,7 +36,31 @@
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
-        <!-- Здесь будет форма -->
+        <form action="#" method="post">
+        <p class="check-in-date">
+          <label>
+            Дата заезда
+            <input type="date" name="check-in-date" placeholder="24 Апреля 2017">
+          </label>
+        </p>
+        <p class="check-out-date">
+          <label>
+            Дата выезда
+            <input type="date" name="check-out-date" placeholder="4 Июля 2017">
+          </label>
+        </p>
+        <p class="adults">
+        <label>Взрослые
+        <input type="number" name="adults-number" min="1">
+        </label>
+        </p>
+        <p class="children">
+          <label>Дети
+          <input type="number" name="childred-number" min="0">
+          </label>
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
   </main>
   <footer>
