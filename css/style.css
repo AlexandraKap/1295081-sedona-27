@@ -48,7 +48,6 @@ html {
   margin: -1px;
 }
 
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -82,23 +81,15 @@ html {
   color: #766357;
 }
 
-.introduction {
-  width: 1200px;
-  height: 508px;
-  padding-top: 76px;
+.introduction-image {
+  width: 458px;
+  height: 352px;
   background-image: url("../img/background.jpg");
   background-color: #315672;
   background-repeat: no-repeat;
 }
 
-.introduction img {
-  width: 458px;
-  height: 352px;
-}
-
 .intoroduction-item {
-  width: 1200px;
-  height: 206px;
   background-color: #ffffff;
 }
 
@@ -291,4 +282,126 @@ input:focus {
   color: #666666;
   font-weight: normal;
   background-color: #f2f2f2;
+}
+
+.main-navigation {
+  width: 100%;
+  padding: 0 72px;
+}
+
+.site-navigation {
+  width: auto;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navigation li:first-child {}
+
+.introduction {
+  width: auto;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction-image {
+  width: auto;
+  height: 650px;
+  padding: 40px 374px 88px 382px;
+}
+
+.intoroduction-item {
+  margin-top: 61px;
+  max-width: 440px;
+}
+
+.reasons p {
+  height: 13px;
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+.hotels h2 {
+  margin-top: 54px;
+  margin-bottom: 36px;
+}
+
+.hotels p {
+  margin-bottom: 52px;
+}
+
+.hotels-container {
+  width: 568px;
+  height: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.find-hotel-btn {
+  padding: 0;
+  border: 0;
+  flex-shrink: 0;
+}
+
+.hotels-container form {
+  height: 395px;
+  margin: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-halfwidth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-footer {
+  padding: 36px 101px 36px 123px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hotels-list li {
+  border-bottom: 1px solid #fefefe;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.hotel-info {
+  margin-left: 30px;
+  width: 258px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-name {
+  text-align: initial;
+}
+
+.hotel-type-price {
+  display: flex;
+  flex-direction: row;
+  text-align: initial;
+}
+
+.hotel-type {
+  width: 110px;
+}
+
+.hotel-price {
+  width: 142px;
+  margin-left: 6px;
+}
+
+.hotel-rate {
+  margin-left: 522px;
 }

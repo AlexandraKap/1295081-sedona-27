@@ -13,23 +13,24 @@
     <header>
       <nav class="main-navigation">
         <ul class="site-navigation">
+          <li><a class="main-logo">
+            <img src="img/logo-sedona.svg" width="140" heigt="72" alt="Logo Sedona">
+          </a></li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
-          <li><a>
-              <img src="img/logo-sedona.svg" width="140" heigt="72" alt="Logo Sedona">
-            </a></li>
         </ul>
+
       </nav>
     </header>
     <main>
       <section class="introduction">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
+        <img class="introduction-image" src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
         <div class="intoroduction-item">
-          <p>Седона — небольшой городок в Аризоне,<br>
-            заслуживающий большего!</p>
+          Седона — небольшой городок в Аризоне,
+            заслуживающий большего!
         </div>
       </section>
       <section class="reasons">
@@ -40,6 +41,7 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="hotels-container">
         <button class="find-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <p class="check-in-date">
@@ -54,6 +56,7 @@
               <input type="date" name="check-out-date" placeholder="4 Июля 2017">
             </label>
           </p>
+          <div class="form-halfwidth">
           <p class="adults">
             <label>Взрослые
               <button type="button" class="less">-</button>
@@ -68,8 +71,10 @@
               <button type="button" class="more">+</button>
             </label>
           </p>
+          </div>
           <button type="submit" class="submit">Найти</button>
         </form>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
