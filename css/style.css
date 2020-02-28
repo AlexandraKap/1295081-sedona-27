@@ -63,7 +63,10 @@ html {
 
 .site-navigation, .social-networks, .hotels-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 
 .site-navigation a {
   color: #000000;
@@ -213,9 +216,14 @@ input:focus {
   color: black;
 }
 
+.social-networks {
+display: flex;
+justify-content: space-between;
+}
+
 .hotel-name {
   font-size: 21px;
-  font-weight: normal;
+  font-weight: bold;
   color: black;
 }
 
@@ -268,11 +276,13 @@ input:focus {
 .hotel-type {
   font-size: 14px;
   font-weight: normal;
+  line-height: 12px;
 }
 
 .hotel-price {
   font-size: 14px;
   font-weight: normal;
+  line-height: 12px;
 }
 
 .hotel-rate {
@@ -293,11 +303,20 @@ input:focus {
   width: auto;
   height: 56px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.site-navigation li:first-child {}
+.site-navigation li:first-child {
+  padding-right: 147px;
+}
+
+.site-navigation li:last-child {
+  padding-left: 161px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}
 
 .introduction {
   width: auto;
@@ -329,8 +348,8 @@ input:focus {
   margin-bottom: 36px;
 }
 
-.hotels p {
-  margin-bottom: 52px;
+.hotels > p {
+  margin: 37px 0 52px 0;
 }
 
 .hotels-container {
@@ -353,12 +372,49 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+
+
 }
 
-.form-halfwidth {
+
+.hotels-container form > p {
+margin: 0;
+position: relative;
+
+}
+
+.hotels-container .form-halfwidth {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+
+}
+
+.form-halfwidth div {
+  display: flex;
+  min-width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.form-halfwidth div:first-child button:first-of-type {
+  margin-left: auto;
+}
+
+.form-halfwidth div:last-child button:first-of-type {
+  margin-left: 26px;
+}
+
+
+
+.hotels-container form input:first-child,
+.hotels-container form input:last-child {
+margin-right: 0;
+padding: 0;
+position: absolute;
+left: 112px;
+
 }
 
 .main-footer {
@@ -370,10 +426,16 @@ input:focus {
 
 .hotels-list li {
   border-bottom: 1px solid #fefefe;
+  width: 1056px;
   height: 150px;
+  margin-left: 71px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+.hotels-list .hotel-image {
+  margin-top: 30px;
 }
 
 .hotel-info {
@@ -383,25 +445,48 @@ input:focus {
   flex-direction: column;
 }
 
-.hotel-name {
-  text-align: initial;
+.hotel-info p {
+margin: 0;
 }
 
-.hotel-type-price {
+.hotel-info .hotel-name {
+  text-align: initial;
+  margin-top: 26px;
+  line-height: 15px;
+}
+
+
+
+.hotel-info .hotel-type-price {
   display: flex;
   flex-direction: row;
   text-align: initial;
+  margin-top: 21px;
 }
 
-.hotel-type {
+.hotel-info .hotel-type {
   width: 110px;
 }
 
-.hotel-price {
+.hotel-info .hotel-price {
   width: 142px;
   margin-left: 6px;
 }
 
-.hotel-rate {
-  margin-left: 522px;
+.hotel-info .btn-details-booking {
+margin-top: 20px;
 }
+
+.hotels-list .hotel-rate {
+  margin-left: 522px;
+  margin-top: 93pxƒ;
+}
+
+.main-logo {
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%);
+
+}
+

@@ -11,11 +11,12 @@
 <body>
   <div class="container">
     <header>
+      <a class="main-logo">
+        <img src="img/logo-sedona.svg" width="140" heigt="72" alt="Logo Sedona">
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a class="main-logo">
-            <img src="img/logo-sedona.svg" width="140" heigt="72" alt="Logo Sedona">
-          </a></li>
+
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -30,7 +31,7 @@
         <img class="introduction-image" src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
         <div class="intoroduction-item">
           Седона — небольшой городок в Аризоне,
-            заслуживающий большего!
+          заслуживающий большего!
         </div>
       </section>
       <section class="reasons">
@@ -42,38 +43,36 @@
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="hotels-container">
-        <button class="find-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <p class="check-in-date">
-            <label>
-              Дата заезда
-              <input type="date" name="check-in-date" placeholder="24 Апреля 2017">
-            </label>
-          </p>
-          <p class="check-out-date">
-            <label>
-              Дата выезда
-              <input type="date" name="check-out-date" placeholder="4 Июля 2017">
-            </label>
-          </p>
-          <div class="form-halfwidth">
-          <p class="adults">
-            <label>Взрослые
-              <button type="button" class="less">-</button>
-              <input type="number" name="adults-number" min="1">
-              <button type="button" class="more">+</button>
-            </label>
-          </p>
-          <p class="children">
-            <label>Дети
-              <button type="button" class="less">-</button>
-              <input type="number" name="childred-number" min="0">
-              <button type="button" class="more">+</button>
-            </label>
-          </p>
-          </div>
-          <button type="submit" class="submit">Найти</button>
-        </form>
+          <button class="find-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <p class="check-in-date">
+              <label for="check-in-date">
+                Дата заезда</label>
+              <input type="text" name="check-in-date" placeholder="24 Апреля 2017" id="check-in-date">
+
+            </p>
+            <p class="check-out-date">
+              <label for="check-out-date">Дата выезда</label>
+              <input type="text" name="check-out-date" placeholder="4 Июля 2017" id="check-out-date">
+
+            </p>
+            <div class="form-halfwidth">
+              <div class="adults">
+                <label for="adults-number">Взрослые</label>
+                <button type="button" class="less">-</button>
+                <input type="number" name="adults-number" min="1" id="adults-number">
+                <button type="button" class="more">+</button>
+              </div>
+              <div class="children">
+                <label for="childred-number">Дети</label>
+                <button type="button" class="less">-</button>
+                <input type="number" name="childred-number" min="0" id="childred-number">
+                <button type="button" class="more">+</button>
+
+              </div>
+            </div>
+            <button type="submit" class="submit">Найти</button>
+          </form>
         </div>
       </section>
     </main>
