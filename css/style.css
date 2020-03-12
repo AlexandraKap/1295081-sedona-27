@@ -61,7 +61,7 @@ html {
   background-color: #ffffff;
 }
 
-.site-navigation, .social-networks, .hotels-list {
+.site-navigation, .social-networks, .hotels-list, .reasons-list, .accomodation-food-gifts{
   list-style: none;
   padding: 0;
   margin: 0;
@@ -87,10 +87,13 @@ html {
 .introduction-image {
   width: 458px;
   height: 352px;
-  background-image: url("../img/background.jpg");
+  background-image:  url("../img/intro-mask.svg"), url("../img/background.jpg");
   background-color: #315672;
   background-repeat: no-repeat;
+  background-position: bottom, top;
+  back
 }
+
 
 .intoroduction-item {
   background-color: #ffffff;
@@ -145,6 +148,10 @@ form label {
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
   background-position: right;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
 }
 
 .children input, .adults input {
@@ -219,6 +226,10 @@ input:focus {
 .social-networks {
 display: flex;
 justify-content: space-between;
+flex-wrap: wrap;
+width: 150px; 
+margin: 0 auto;
+padding; 0;
 }
 
 .hotel-name {
@@ -489,4 +500,112 @@ left: 50%;
 transform: translate(-50%);
 
 }
+
+.reason-number, .reason-explain, .accomodation-food-gifts-description {
+font-size: 14px;
+font-weight: 400;
+
+}
+
+.reasons-list > li {
+  background-color: #eeeeee;
+  width: 400px;
+  height: 256px; 
+  padding-top: 46px;
+}
+
+
+.reasons-list > li:first-child,
+.reasons-list > li:nth-child(2) {
+  background-color: #81b3d2;
+  color: white;
+  margin-left: 800px;
+  margin-right: 0;
+  
+  }
+
+.reasons-list > li:first-child {
+  margin-left: 0;  
+  margin-right: 800px;
+    }
+  
+.reasons-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      
+.accomodation-food-gifts {
+width: 1200px;
+height: 256px;
+display: flex;
+}
+
+.accomodation-food-gifts li{
+  background-color: white;
+  padding-top: 160px;
+  width: 400px;
+  height: 330px;
+ 
+}
+
+.reason-number,
+.accomodation-food-gifts-description {
+margin-top: 28px;
+line-height: 23px;
+
+}
+
+.reason-explain {
+margin-top: 30px;
+line-height: 23px;
+}
+
+.reasons-list > li:first-child {
+  order: -2;
+}
+
+.reasons-list > li:last-child {
+  order: -1;
+  padding-top: 0;
+}
+
+.reasons {
+  position: relative;
+}
+.reasons .sedona-city-photo {
+  position: absolute;
+  top: 69px;
+  right: 0;
+}
+
+.reasons .sedona-bridge {
+  position: absolute;
+  top: 581px;
+  left: 0;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 48px;
+  background-color: #81b3d2; 
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+ 
+}
+
+.social-button:active path {
+  fill: #88b6d1;
+}
+
 
